@@ -21,8 +21,9 @@
   </head>
 
   <body>
+    <!-- Header BEGIN -->
     <header id="header">
-      <nav class="header-top">
+      <div class="header-top">
         <div class="container">
           <div class="info">
             <ul class="contact">
@@ -81,8 +82,98 @@
             </ul>
           </div>
         </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <nav>
+            <div>
+              <a class="logo" href="index.html"><img src="img/logo.png"></a>
+            </div>
+            <div class="menu">
+              <ul>
+                <li>
+                  <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+                <li class="dropdown">
+                  <button class="dropdown-toggle" onclick="dropdownToggle()">Pages</button>
+                  <ul class="dropdown-content" id="dropdownContent">
+                    <li>
+                      <a href="room.html">Room</a>
+                    </li>
+                    <li>
+                      <a href="room-details.html">Room-Details</a>
+                    </li>
+                    <li>
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                      <a href="blog-single.html">Blog-Single</a>
+                    </li>
+                    <li>
+                      <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                      <a href="service-details.html">Service-Details</a>
+                    </li>
+                    <li>
+                      <a href="booking.html">Booking</a>
+                    </li>
+                    <li>
+                      <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                      <a href="team.html">Team</a>
+                    </li>
+                    <li>
+                      <a href="review.html">Reviews</a>
+                    </li>
+                    <li>
+                      <a href="faq.html">FAQs</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="search">
+              <form class="position-relative">
+                <input type="text" class="form-control" placeholder="Search...">
+                <a href="#" class="position-absolute">
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="currentColor" fill-rule="evenodd" d="M11.5 2.75a8.75 8.75 0 1 0 0 17.5a8.75 8.75 0 0 0 0-17.5M1.25 11.5c0-5.66 4.59-10.25 10.25-10.25S21.75 5.84 21.75 11.5c0 2.56-.939 4.902-2.491 6.698l3.271 3.272a.75.75 0 1 1-1.06 1.06l-3.272-3.271A10.21 10.21 0 0 1 11.5 21.75c-5.66 0-10.25-4.59-10.25-10.25" clip-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
+    <!-- Header END -->
 
+    <main>
+    </main>
+
+    <!-- Footer BEGIN -->
+    <footer>
+    </footer>
+    <!-- Footer END -->
+
+    <!-- JavaScript -->
+    <script src="js/dropdown-menu.js"></script> 
   </body>
 </html> 

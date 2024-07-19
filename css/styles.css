@@ -73,6 +73,11 @@ h6 {
   font-weight: 400;
 }
 
+imput {
+  outline: 0;
+  box-shadow: none;
+}
+
 .container {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -89,6 +94,7 @@ h6 {
   padding-bottom: 0.25rem;
 }
 
+/* Contact & socials. */
 .header-top .info {
   display: flex;
   flex-wrap: wrap;
@@ -122,4 +128,134 @@ svg.icon {
   
 svg.icon:hover {
   color: var(--primary-color);
+}
+
+.header-bottom {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/* Site logo, nav nenu & search. */
+.header-bottom nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  margin-right: 1em;
+  white-space: nowrap;
+}
+
+nav .menu {
+  font-size: 1.1rem;
+}
+
+nav .menu > ul {
+  display: flex;
+  align-items: center;
+}
+
+nav .menu > ul > li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.menu li > a {
+  color: var(--black-color);
+  text-transform: capitalize;
+}
+
+.menu li > a.active,
+.menu li > a:hover,
+.menu li > button:hover {
+  color: var(--primary-color);
+}
+
+.menu .dropdown {
+  position: relative;
+}
+
+.menu .dropdown .dropdown-toggle {
+  cursor: pointer;
+  font-size: inherit;  
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  border-bottom: 0;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  z-index: 1;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+  margin-top: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 0.375em;
+  min-width: 175px;
+}
+
+.dropdown .show {
+  display: block;
+}
+
+.dropdown-content > li a {
+  display: block;
+  width: 100%;
+  padding: 0.25em 1em;
+  clear: both;
+  color: var(--dark-color);
+  text-transform: capitalize;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-content > li a:hover {
+  color: var(--dark-color);
+  background-color: var(--secondary-color);
+}
+
+/* Search. */
+.search .position-relative {
+  position: relative;
+}
+
+.search .form-control {
+  padding: 0.5em 1.5em;
+  background-color: rgba(249, 246, 243, 1);
+  border: 0;
+  border-radius: 2em;
+  font-size: 1rem;
+  line-height: 1.5;
+  appearance: none;
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: inherit;
+  width: 100%;
+}
+
+.search .position-absolute {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: 1em;
+  padding: 0.25em;
 }
