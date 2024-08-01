@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -195,6 +197,55 @@
         </div>
       </section>
       <!-- About Us END -->
+
+      <!-- Statistic BEGIN -->
+      <section class="statistic" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="inner">
+                <h3>25K
+                  <span class="inner-span-1">
+                    <img src="img/circle.png" alt="Circle Figure (heading 1).">
+                  </span>
+                </h3>
+                <p>Happy Customer</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="inner">
+                <h3>160
+                  <span class="inner-span-2">
+                    <img src="img/circle.png" alt="Circle Figure (heading 2)." class="img-item">
+                  </span>
+                </h3>
+                <p>Total Rooms</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="inner">
+                <h3>25
+                  <span class="inner-span-3">
+                    <img src="img/circle.png" alt="Circle Figure (heading 3)." class="img-item">
+                  </span>
+                </h3>
+                <p>Award wins</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="inner">
+                <h3>200
+                  <span class="inner-span-4">
+                    <img src="img/circle.png" alt="Circle Figure (heading 4)." class="img-item">
+                  </span>
+                </h3>
+                <p>Total Members</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Statistic END -->
     </main>
 
     <!-- Footer BEGIN -->
@@ -203,6 +254,17 @@
     <!-- Footer END -->
 
     <!-- JavaScript -->
-    <script src="js/dropdown-menu.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="js/dropdown-menu.js"></script>
+
+    <script>
+      // AOS.init();
+
+      // Animate on Scroll
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
   </body>
 </html> 
