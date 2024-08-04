@@ -9,6 +9,7 @@
   --black-color: #1A1A1A;
   --dark-color: #353535;
   --gray-color: #777F81;
+  --white-color: #ffffff;
   --light-color: #fdfdfd;
 
   /* Fonts */
@@ -79,8 +80,8 @@ imput {
 }
 
 .container {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 6em;
+  padding-right: 6em;
   margin: 0 auto;
   width: 100%;
 }
@@ -114,8 +115,8 @@ imput {
 /*--------------------------------------------------------------*/
 .header-top {
   background-color: rgba(249, 246, 243, 1);
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 
 /* Contact & socials. */
@@ -133,7 +134,7 @@ imput {
 }
 
 .header-top .info ul > li {
-  margin-right: 1.5rem;
+  margin-right: 1.5em;
   display: flex;
   align-items: center;
 }
@@ -143,7 +144,7 @@ imput {
 }
 
 .header-top .info .contact svg {
-  margin-right: 0.25rem;
+  margin-right: 0.25em;
 }
 
 svg.icon {
@@ -285,6 +286,31 @@ nav .menu > ul > li {
 }
 
 /*--------------------------------------------------------------*/
+/* Banner.
+/*--------------------------------------------------------------*/
+.data {
+  background: url("../img/banner.jpg") no-repeat center;
+  background-size: cover;
+  height: 85vh;
+  border-radius: 2em;
+  padding-top: 3em;
+  display: flex;
+  align-items: center;
+
+  /* "todo: transform */
+}
+
+.data-text {
+  margin-left: 10%;
+  text-align: left;
+}
+
+.data-text .heading-2 {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+/*--------------------------------------------------------------*/ 
 /* About Us.
 /*--------------------------------------------------------------*/
 .about-us {
@@ -394,6 +420,37 @@ nav .menu > ul > li {
   right: -1.6rem;
 }
 
+.data-form {
+  background-color: var(--white-color);
+  opacity: 1;
+  margin-left: 3em;
+  padding: 3em;
+}
+
+.data-form .heading-3 {
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 3em;
+}
+
+.data-form .inner {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.inner .form-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.inner .date {
+  border-radius: 5px 5px 0 0;
+  margin: 5px 0;
+  text-align: center;
+  user-select: none;
+  background-color: transparent;
+  opacity: 1; 
+}
 /*--------------------------------------------------------------*/
 /* Statistic.
 /*--------------------------------------------------------------*/
@@ -534,12 +591,10 @@ img.post-image {
   bottom: 20px;
 
   background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .h4-display {
   line-height: 1.2;
   font-size: 2.5rem;
-
   color: var(--light-color);
 }
